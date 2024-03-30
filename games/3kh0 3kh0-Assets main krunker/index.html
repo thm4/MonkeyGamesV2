@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta property="og:url" content="https://3kh0.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Krunker | 3kh0" />
+    <meta property="og:description" content="Krunker" />
+    <meta property="og:image" content="img/favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="Krunker" />
+    <link rel="icon" sizes="192x192" href="img/favicon.png" />
+    <link rel="shortcut icon" href="img/logo_1.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/krunker-io.jpg" type="image/x-icon" />
+    <title>Krunker | 3kh0</title>
+    <style>
+      /* Loading screen styles */
+      #loader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .loader-bar {
+        width: 50%;
+        height: 20px;
+        background: #3498db;
+        animation: loaderAnimation 2s infinite;
+      }
+
+      @keyframes loaderAnimation {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loader">
+      <div class="loader-bar"></div>
+    </div>
+    <iframe
+      src="https://krunker.io/"
+      title="Krunker Launcher"
+      style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;"
+    ></iframe>
+  </body>
+</html>
